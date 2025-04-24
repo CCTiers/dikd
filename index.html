@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTiers - Minecraft Tier Testing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CCTiers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#leaderboards">Ranking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Discords</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control me-2 search-bar" type="search" placeholder="Search player..." aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Leaderboards Section -->
+    <div class="container leaderboards" id="leaderboards">
+        <!-- Game Mode Tabs -->
+        <ul class="nav nav-tabs game-mode-tabs" id="gameModeTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="overall-tab" data-bs-toggle="tab" href="#overall" role="tab">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="sword-tab" data-bs-toggle="tab" href="#sword" role="tab">Sword</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="nethpot-tab" data-bs-toggle="tab" href="#nethpot" role="tab">NethPot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="uhc-tab" data-bs-toggle="tab" href="#uhc" role="tab">UHC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="diapot-tab" data-bs-toggle="tab" href="#diapot" role="tab">DiaPot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="mace-tab" data-bs-toggle="tab" href="#mace" role="tab">Mace</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="cpvp-tab" data-bs-toggle="tab" href="#cpvp" role="tab">CPvP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="smp-tab" data-bs-toggle="tab" href="#smp" role="tab">SMP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="axe-tab" data-bs-toggle="tab" href="#axe" role="tab">Axe</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="gameModeTabContent">
+            <div class="tab-pane fade show active" id="overall" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="overall-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="overall-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="overall-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="overall-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="overall-tier5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="sword" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="sword-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="sword-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="sword-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="sword-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="sword-tier5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nethpot" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="nethpot-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="nethpot-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="nethpot-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="nethpot-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="nethpot-tier5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="uhc" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="uhc-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="uhc-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="uhc-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="uhc-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="uhc-tier5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="diapot" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="diapot-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="diapot-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="diapot-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="diapot-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="diapot-tier5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="mace" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="mace-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="mace-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="mace-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="mace-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="mace-tier5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="cpvp" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="cpvp-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="cpvp-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="cpvp-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="cpvp-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="cpvp-tier5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="smp" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="smp-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="smp-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="smp-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="smp-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="smp-tier5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="axe" role="tabpanel">
+                <div class="row tier-columns">
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 1</h3>
+                        <div id="axe-tier1"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 2</h3>
+                        <div id="axe-tier2"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 3</h3>
+                        <div id="axe-tier3"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 4</h3>
+                        <div id="axe-tier4"></div>
+                    </div>
+                    <div class="col-md-2-4 tier-column">
+                        <h3>Tier 5</h3>
+                        <div id="axe-tier5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Show Kit Toggle -->
+        <div class="show-kit">
+            <button class="btn btn-secondary">Show Kit</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
